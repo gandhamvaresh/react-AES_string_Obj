@@ -1,0 +1,27 @@
+h1,
+p {
+  font-family: Lato;
+  overflow-wrap: anywhere;
+  width: 70%;
+}
+
+.buttonType {
+  width: 30%;
+  margin: 20px;
+  background-color: brown;
+}
+
+.textareaType {
+  width: 70%;
+  margin: 5px;
+}
+
+.inputType {
+  width: 70%;
+  margin: 20px;
+}
+
+.selectType {
+  background-color: beige;
+  margin-bottom: 20px;
+}
