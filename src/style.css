@@ -7,23 +7,47 @@ p {
 #root {
   margin-left: 5%;
 }
-.buttonType {
+/* .buttonType {
   width: 30%;
   margin: 20px;
   background-color: brown;
+} */
+.red {
+  background-color: tomato;
+}
+
+.green {
+  background-color: seagreen;
+}
+
+.blue {
+  background-color: rgb(3, 87, 212);
+}
+.btns {
+  margin: 25px;
+}
+
+button {
+  /* background-color: #4caf50;  */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
 }
 
 .textareaType {
   width: 70%;
   margin: 5px;
-  width: 100%;
   padding: 12px 20px;
 }
 
 .inputType {
   width: 70%;
   margin: 20px;
-  width: 100%;
   padding: 12px 20px;
 }
 

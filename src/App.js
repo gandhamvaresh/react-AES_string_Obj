@@ -160,12 +160,18 @@ export default function App() {
             />
           </div>
         </div>
-        <div>
-          <button type="submit" className="buttonType">
+        <div className="btns">
+          <button type="submit" className="buttonType blue">
             Submit
           </button>
-          <button onClick={copyClick}> Copy</button>
-          <button onClick={clearClick}> Clear</button>
+          <button onClick={copyClick} className="green">
+            {' '}
+            Copy
+          </button>
+          <button onClick={clearClick} className="red">
+            {' '}
+            Clear
+          </button>
         </div>
       </form>
       <div>
