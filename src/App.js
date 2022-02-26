@@ -175,6 +175,8 @@ export default function App() {
         </div>
       </form>
       <div>
+        <label> Output:</label>
+        <br />
         <p> {outPutValue} </p>{' '}
       </div>
     </div>
