@@ -109,11 +109,26 @@ export default function App() {
     setcryptoType(event.target.value);
   };
 
+  const clearClick = (event) => {
+    event.preventDefault();
+    setkeyText('');
+    setcodeValue('');
+    setoutPutvalue('');
+    event.preventDefault();
+  };
+
+  const copyClick = (event) => {
+    event.preventDefault();
+    let op = outPutValue;
+    navigator.clipboard.writeText(op);
+    // event.preventDefault();
+  };
+
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <h1>Hello Cryptos!</h1>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="select">
           {' '}
           <select
             value={cryptoType}
@@ -145,12 +160,17 @@ export default function App() {
             />
           </div>
         </div>
-        <button type="submit" className="buttonType">
-          Submit
-        </button>
+        <div>
+          <button type="submit" className="buttonType">
+            Submit
+          </button>
+          <button onClick={copyClick}> Copy</button>
+          <button onClick={clearClick}> Clear</button>
+        </div>
       </form>
-
-      <p> {outPutValue} </p>
+      <div>
+        <p> {outPutValue} </p>{' '}
+      </div>
     </div>
   );
 }
